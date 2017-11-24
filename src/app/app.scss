@@ -1,16 +1,53 @@
-// http://ionicframework.com/docs/theming/
+@import url('https://fonts.googleapis.com/css?family=Dosis');
 
+/* Fonte do aplicativo */
+.slide-image, .toolbar-title-wp, .toolbar-title-ios, .toolbar-title-md {
+    font-family: 'Dosis', sans-serif;
+    color: #ffffff;
+}
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+/* Fonte do conteúdo */
+.content-wp, .content-ios, .content-md {
+    font-family: 'Dosis', sans-serif;
+    color: #000000;
+}
+
+/* Fundo e fonte das abas não selecionadas */
+.tabs-ios .tabbar, .tabs-wp .tabbar, .tabs-md .tabbar {
+    background: #009688;
+}
+
+/* Fundo das abas selecionadas */
+.tabs-wp .tab-button[aria-selected=true],
+.tabs-ios .tab-button[aria-selected=true],
+.tabs-md .tab-button[aria-selected=true] {
+    background: #ffffff;
+}
+
+/* Ícones das abas não selecionadas */
+.tabs-wp .tab-button-icon,
+.tabs-ios .tab-button-icon,
+.tabs-md .tab-button-icon {
+    color: #ffffff;
+}
+
+/* Ícones das abas selecionadas */
+.tabs-wp .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: #009688;
+}
+
+/* Fonte das abas não selecionadas */
+.tabs-md .tab-button-text, .tabs-md .tab-button-text, .tabs-md .tab-button-text {
+    font-family: 'Dosis', sans-serif;
+    color: #ffffff;
+}
+
+/* Fonte das abas selecionadas */
+.tabs-md .tab-button[aria-selected=true] .tab-button-text,
+.tabs-md .tab-button[aria-selected=true] .tab-button-text,
+.tabs-md .tab-button[aria-selected=true] .tab-button-text {
+    font-family: 'Dosis', sans-serif;
+    color: #009688;
+}

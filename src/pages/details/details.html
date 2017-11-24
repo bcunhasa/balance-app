@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Imagem final</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <img src="{{ image }}"/>
+  </ion-card>
+  
+  <p>A sua imagem foi salva!</p>
+  
+  <button ion-button type="button" color="primary" (click)="postOnInstagram()">Postar no Instagram</button>
+  <button ion-button type="button" color="primary" (click)="postOnFacebook()">Postar no Facebook</button>
+  <button ion-button type="button" color="primary" (click)="postOnTwitter()">Postar no Twitter</button>
+  
+  <button ion-button type="button" color="primary" (click)="goToEditorPage()">Editar outra foto</button>
+
+</ion-content>

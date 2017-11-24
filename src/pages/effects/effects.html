@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Efeitos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+      
+    <ion-list-header>Efeitos</ion-list-header>
+    <ion-item *ngFor="let effect of effectsList" (click)="applyEffect(effect.title)">
+      <ion-avatar item-start>
+        <img src="{{ effect.preview }}"/>
+      </ion-avatar>
+      <h2>{{ effect.title }}</h2>
+      <p>{{ effect.description }}</p>
+    </ion-item>
+    
+    <ion-list-header>Transformações</ion-list-header>
+    <ion-item *ngFor="let effect of transformationsList" (click)="applyEffect(effect.title)">
+      <ion-avatar item-start>
+        <img src="{{ effect.preview }}"/>
+      </ion-avatar>
+      <h2>{{ effect.title }}</h2>
+      <p>{{ effect.description }}</p>
+    </ion-item>
+    
+    <ion-list-header>Filtros</ion-list-header>
+    <ion-item *ngFor="let effect of filtersList" (click)="applyEffect(effect.title)">
+      <ion-avatar item-start>
+        <img src="{{ effect.preview }}"/>
+      </ion-avatar>
+      <h2>{{ effect.title }}</h2>
+      <p>{{ effect.description }}</p>
+    </ion-item>
+      
+  </ion-list>
+</ion-content>

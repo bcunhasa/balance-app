@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Seleção de imagem</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12> <img src="{{ image }}"/> </ion-col> 
+    </ion-row>
+    
+    <ion-row>
+      <ion-col col-12> <button ion-button round (click)="goToEffectsPage()">Efeitos</button> </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col col-12> <button ion-button round (click)="takePhoto()">Câmera</button> </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col col-12> <button ion-button round (click)="selectPhoto()">Galeria</button> </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>
