@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 
+/* Barra de ferramentas */
+.toolbar-background-wp, .toolbar-background-ios, .toolbar-background-md {
+    background-color: #009688;
+}
+
 /* Fonte do aplicativo */
 .slide-image, .toolbar-title-wp, .toolbar-title-ios, .toolbar-title-md {
     font-family: 'Dosis', sans-serif;
@@ -10,44 +15,4 @@
 .content-wp, .content-ios, .content-md {
     font-family: 'Dosis', sans-serif;
     color: #000000;
-}
-
-/* Fundo e fonte das abas não selecionadas */
-.tabs-ios .tabbar, .tabs-wp .tabbar, .tabs-md .tabbar {
-    background: #009688;
-}
-
-/* Fundo das abas selecionadas */
-.tabs-wp .tab-button[aria-selected=true],
-.tabs-ios .tab-button[aria-selected=true],
-.tabs-md .tab-button[aria-selected=true] {
-    background: #ffffff;
-}
-
-/* Ícones das abas não selecionadas */
-.tabs-wp .tab-button-icon,
-.tabs-ios .tab-button-icon,
-.tabs-md .tab-button-icon {
-    color: #ffffff;
-}
-
-/* Ícones das abas selecionadas */
-.tabs-wp .tab-button[aria-selected=true] .tab-button-icon,
-.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,
-.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
-    color: #009688;
-}
-
-/* Fonte das abas não selecionadas */
-.tabs-md .tab-button-text, .tabs-md .tab-button-text, .tabs-md .tab-button-text {
-    font-family: 'Dosis', sans-serif;
-    color: #ffffff;
-}
-
-/* Fonte das abas selecionadas */
-.tabs-md .tab-button[aria-selected=true] .tab-button-text,
-.tabs-md .tab-button[aria-selected=true] .tab-button-text,
-.tabs-md .tab-button[aria-selected=true] .tab-button-text {
-    font-family: 'Dosis', sans-serif;
-    color: #009688;
 }

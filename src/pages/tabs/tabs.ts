@@ -6,6 +6,7 @@ import { GalleryPage } from '../gallery/gallery';
 import { SettingsPage } from '../settings/settings';
 
 @Component({
+  selector: 'tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {

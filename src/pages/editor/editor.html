@@ -15,15 +15,25 @@
     </ion-row>
     
     <ion-row>
-      <ion-col col-12> <button ion-button round (click)="goToEffectsPage()">Efeitos</button> </ion-col>
+      <ion-col col-12><button ion-button round clear (click)="goToEffectsPage()">Confirmar</button> </ion-col>
     </ion-row>
     
     <ion-row>
-      <ion-col col-12> <button ion-button round (click)="takePhoto()">Câmera</button> </ion-col>
+      <ion-col col-12>
+        <button ion-button round (click)="takePhoto()">
+          <ion-icon name="camera" icon-start></ion-icon>
+          Câmera
+        </button>
+      </ion-col>
     </ion-row>
     
     <ion-row>
-      <ion-col col-12> <button ion-button round (click)="selectPhoto()">Galeria</button> </ion-col>
+      <ion-col col-12>
+        <button ion-button round (click)="selectPhoto()">
+          <ion-icon name="photos" icon-start></ion-icon>
+          Galeria
+        </button>
+      </ion-col>
     </ion-row>
   </ion-grid>
   

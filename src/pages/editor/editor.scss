@@ -1,18 +1,19 @@
 page-editor {
-    
-    .toolbar-background-wp, .toolbar-background-ios, .toolbar-background-md {
-        background-color: #673AB7;
-    }
 
-    .button-md, .button-ios {
-        background-color: rgba(49, 49, 49, 0.46);
+    .button-wp, .button-ios, .button-md {
+        background-color: #009688;
         width: 100%;
         justify-content: center;
+        color: #ffffff;
     }
     
     img {
         width: 100%;
         height: auto;
+    }
+    
+    ion-icon {
+        padding-right: 10px;
     }
     
 }

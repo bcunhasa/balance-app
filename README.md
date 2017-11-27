@@ -1,26 +1,11 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Balance
 
-## How to use this template
+Balance é um aplicativo para edição de imagens.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+## Sobre o projeto
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Este é o projeto final para a disciplina de Desenvolvimento de Aplicativos Móveis Híbridos, do curso de Ciência da Computação da Universidade Federal do Tocantins.
 
-### With the Ionic CLI:
+## Sobre o aplicativo
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
-
-Then, to run it, cd into `myTabs` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+O aplicativo Balance permite ao usuário a aplicação de filtros e efeitos em suas fotos. Todo o processamento das imagens é feito no lado do servidor.

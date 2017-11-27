@@ -28,6 +28,7 @@ export class EditorPage {
   }
   
   ionViewDidLoad() {
+    this.message = "Selecione uma imagem";
   }
   
   public takePhoto() {
