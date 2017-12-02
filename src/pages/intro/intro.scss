@@ -4,6 +4,13 @@ page-intro {
         background-color: #009688;
     }
     
+    .button-wp, .button-ios, .button-md {
+        background-color: #ffffff;
+        width: 100%;
+        justify-content: center;
+        color: #009688;
+    }
+    
     p {
         color: #ffffff;
         font-size: 25px;
@@ -11,6 +18,22 @@ page-intro {
     
     .slide-image img {
         width: 300px;
+    }
+    
+    .half-image {
+        background-color: #ffffff;
+    }
+    
+    .half-text {
+        background-color: #009688;
+    }
+    
+    ion-grid {
+        height: 100%;
+        
+        ion-row {
+            height: 50%;
+        }
     }
     
 }

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { NativeStorage } from '@ionic-native/native-storage';
 
+import { RestProvider } from '../../providers/rest/rest';
 import { EditorPage } from '../editor/editor';
 
 @IonicPage()
@@ -17,17 +18,32 @@ export class DetailsPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private nativeStorage: NativeStorage) {
+    private nativeStorage: NativeStorage,
+    private restProvider: RestProvider) {
   }
 
   ionViewDidLoad() {
     this.loadImage();
+    this.uploadGalleryItem();
   }
   
   private loadImage() {
     this.nativeStorage.getItem('resultImage').then((resultImage) => {
       let resultObject = JSON.parse(resultImage);
       this.image = resultObject.image;
+    });
+  }
+  
+  private uploadGalleryItem() {
+    let data = {
+      uri: 'Image 1',
+      effect: 'Escala de cinza',
+    };
+    
+    this.restProvider.postGalleryItem(data).then((result) => {
+      console.log(result);
+    }, (error) => {
+      console.log(error);
     });
   }
   

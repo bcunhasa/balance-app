@@ -32,5 +32,27 @@ export class RestProvider {
       });
     });
   }
+  
+  public getGallery() {
+    return new Promise(resolve => {
+      this.http.get(this.apiUrl + 'image/gallery/').subscribe(data => {
+        resolve(data);
+      }, err => {
+        console.log(err);
+      });
+    });
+  }
+
+  public postGalleryItem(data: any) {
+    return new Promise((resolve, reject) => {
+      this.http.post(this.apiUrl + 'image/gallery/', JSON.stringify(data), {
+        headers: new HttpHeaders().set('Content-Type', 'application/json')
+      }).subscribe(res => {
+        resolve(res);
+      }, (err) => {
+        reject(err);
+      });
+    });
+  }
 
 }
